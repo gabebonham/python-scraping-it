@@ -38,3 +38,5 @@ def run():
             print(f'Número de erros: {error_counter} | Número máximo de erros: 3')
    
 run()
+# todo validacao de sessao login
+# todo notify section
