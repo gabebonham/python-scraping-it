@@ -36,7 +36,7 @@ class ValidationContext:
         self.driver.get(f'https://prenotami.esteri.it{self.target_href}')
         time.sleep(4)
         if 'Booking' in self.driver.current_url:
-            print('Agendamento disponível')
+            print('Agendamento disponível!')
             return True
         else:
             print('Agendamento não disponível')
