@@ -7,16 +7,18 @@ class App:
         self.email = ''
         self.password = ''
         self.driver = None
-        self.row_position = 1
+        self.booking_id = None
+        self.period = None
         self.configure()
         pass
     def configure(self):
         load_dotenv()
         self.email = os.getenv('EMAIL')
         self.password = os.getenv('PASSWORD')
-        self.row_position = int(os.getenv('ROW_POSITION'))
+        self.booking_id = int(os.getenv('BOOKING_ID'))
+        self.period = int(os.getenv('PERIOD_MIN'))
         options = uc.ChromeOptions()
         options.add_argument('--incognito')
         options.binary_location = "/usr/bin/google-chrome"
         self.driver = uc.Chrome(use_subprocess=True, user_data_dir=None, options=options)
-        self.driver.set_page_load_timeout(30)
+        self.driver.set_page_load_timeout(60)

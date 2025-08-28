@@ -28,9 +28,9 @@ async def execute():
     while not is_free:
         try:
             app.driver.get("https://prenotami.esteri.it/Services")
-            validation.locate_element(button_position=app.row_position)
-            is_free = validation.validate_calendar()
-            time.sleep(5)
+            validation.locate_element()
+            is_free = validation.validate_calendar(app.booking_id)
+            time.sleep(60*app.period)
         except LoginException as le:
             print(f'Erro de auth: {e}')
             await notify.send_notification_error_auth(e)
