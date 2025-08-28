@@ -42,7 +42,7 @@ class ValidationContext:
             
     def validate_calendar(self, booking_id):
         self.driver.get(f'https://prenotami.esteri.it/Services/Booking/{booking_id}')
-        if 'Booking' in self.driver.current_url:
+        if 'Booking' in self.driver.current_url and 'ReturnUrl' not in self.driver.current_url:
             print('Agendamento disponível!')
             return True
         else:
