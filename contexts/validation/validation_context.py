@@ -5,12 +5,14 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.window import WindowTypes
+from utils.logger import setup_logger
 class ValidationContext:
     def __init__(self, driver):
         self.driver = driver
         self.table_id = 'dataTableServices'
         self.target_button = None
         self.target_href = ''
+        self.log = setup_logger()
         pass
     def locate_element(self):
         # table = WebDriverWait(self.driver, 10).until(
@@ -35,7 +37,7 @@ class ValidationContext:
         #                 )
         #                 self.target_href = a.get_attribute("href")
                         
-        #                 log.info(f"Botão encontrado para agendamento {self.target_href.split('/')[3]}")
+        #                 self.log.info(f"Botão encontrado para agendamento {self.target_href.split('/')[3]}")
         #                 return  
         return        
                           
@@ -43,22 +45,22 @@ class ValidationContext:
     def validate_calendar(self, booking_id):
         self.driver.get(f'https://prenotami.esteri.it/Services/Booking/{booking_id}')
         if 'Booking' in self.driver.current_url and 'ReturnUrl' not in self.driver.current_url:
-            log.info('Agendamento disponível!')
+            self.log.info('Agendamento disponível!')
             return True
         else:
-            log.info('Agendamento não disponível')
+            self.log.info('Agendamento não disponível')
             return False
             
             
     # def validate_loading(self):
     #     if self.driver.current_url=='https://prenotami.esteri.it/Services':
-    #         log.info(f"Pagina carregada")
+    #         self.log.info(f"Pagina carregada")
     #         return True
     #     elif self.driver.current_url=='https://prenotami.esteri.it/Services/Booking/5662':
     #         component = WebDriverWait(self.driver, 15).until(
     #             EC.presence_of_element_located((By.ID, "BookingForm"))
     #         )
-    #         log.info(f"Pagina carregada")
+    #         self.log.info(f"Pagina carregada")
     #         return True
     #     else:
     #         for attempt in range(5):
@@ -66,10 +68,10 @@ class ValidationContext:
     #                 WebDriverWait(self.driver, 15).until(
     #                     EC.presence_of_element_located((By.ID, "BookingForm"))
     #                 )
-    #                 log.info(f"Pagina carregada")
+    #                 self.log.info(f"Pagina carregada")
     #                 return True
     #             except:
-    #                 log.info(f"Tentativa {attempt+1}: página não carregou, dando refresh...")
+    #                 self.log.info(f"Tentativa {attempt+1}: página não carregou, dando refresh...")
     #                 self.driver.refresh()
     #                 time.sleep(5)
     #         return False
