@@ -35,7 +35,7 @@ class ValidationContext:
         #                 )
         #                 self.target_href = a.get_attribute("href")
                         
-        #                 print(f"Botão encontrado para agendamento {self.target_href.split('/')[3]}")
+        #                 log.info(f"Botão encontrado para agendamento {self.target_href.split('/')[3]}")
         #                 return  
         return        
                           
@@ -43,22 +43,22 @@ class ValidationContext:
     def validate_calendar(self, booking_id):
         self.driver.get(f'https://prenotami.esteri.it/Services/Booking/{booking_id}')
         if 'Booking' in self.driver.current_url and 'ReturnUrl' not in self.driver.current_url:
-            print('Agendamento disponível!')
+            log.info('Agendamento disponível!')
             return True
         else:
-            print('Agendamento não disponível')
+            log.info('Agendamento não disponível')
             return False
             
             
     # def validate_loading(self):
     #     if self.driver.current_url=='https://prenotami.esteri.it/Services':
-    #         print(f"Pagina carregada")
+    #         log.info(f"Pagina carregada")
     #         return True
     #     elif self.driver.current_url=='https://prenotami.esteri.it/Services/Booking/5662':
     #         component = WebDriverWait(self.driver, 15).until(
     #             EC.presence_of_element_located((By.ID, "BookingForm"))
     #         )
-    #         print(f"Pagina carregada")
+    #         log.info(f"Pagina carregada")
     #         return True
     #     else:
     #         for attempt in range(5):
@@ -66,10 +66,10 @@ class ValidationContext:
     #                 WebDriverWait(self.driver, 15).until(
     #                     EC.presence_of_element_located((By.ID, "BookingForm"))
     #                 )
-    #                 print(f"Pagina carregada")
+    #                 log.info(f"Pagina carregada")
     #                 return True
     #             except:
-    #                 print(f"Tentativa {attempt+1}: página não carregou, dando refresh...")
+    #                 log.info(f"Tentativa {attempt+1}: página não carregou, dando refresh...")
     #                 self.driver.refresh()
     #                 time.sleep(5)
     #         return False

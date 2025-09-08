@@ -1,0 +1,158 @@
+[2025-09-07 21:18:46] [ERROR] bot: Erro ao executar loop  externo: Message: session not created: cannot connect to chrome at 127.0.0.1:40619
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.138; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x61797a01b94a <unknown>
+#1 0x617979a908a0 <unknown>
+#2 0x617979ad1587 <unknown>
+#3 0x617979ad0492 <unknown>
+#4 0x617979ac5b49 <unknown>
+#5 0x617979b16386 <unknown>
+#6 0x617979b15a56 <unknown>
+#7 0x617979b07e03 <unknown>
+#8 0x617979ad4968 <unknown>
+#9 0x617979ad55e1 <unknown>
+#10 0x617979fdf548 <unknown>
+#11 0x617979fe3272 <unknown>
+#12 0x617979fc6313 <unknown>
+#13 0x617979fe3dc5 <unknown>
+#14 0x617979fab49f <unknown>
+#15 0x61797a008158 <unknown>
+#16 0x61797a008332 <unknown>
+#17 0x61797a01aa53 <unknown>
+#18 0x751d7149caa4 <unknown>
+#19 0x751d71529c3c <unknown>
+
+[2025-09-07 21:18:46] [ERROR] bot: Número de erros: 1 | Número máximo de erros: 3
+[2025-09-07 21:18:47] [ERROR] bot: Erro ao executar loop  externo: Message: session not created: cannot connect to chrome at 127.0.0.1:43359
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.138; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x609d4051f94a <unknown>
+#1 0x609d3ff948a0 <unknown>
+#2 0x609d3ffd5587 <unknown>
+#3 0x609d3ffd4492 <unknown>
+#4 0x609d3ffc9b49 <unknown>
+#5 0x609d4001a386 <unknown>
+#6 0x609d40019a56 <unknown>
+#7 0x609d4000be03 <unknown>
+#8 0x609d3ffd8968 <unknown>
+#9 0x609d3ffd95e1 <unknown>
+#10 0x609d404e3548 <unknown>
+#11 0x609d404e7272 <unknown>
+#12 0x609d404ca313 <unknown>
+#13 0x609d404e7dc5 <unknown>
+#14 0x609d404af49f <unknown>
+#15 0x609d4050c158 <unknown>
+#16 0x609d4050c332 <unknown>
+#17 0x609d4051ea53 <unknown>
+#18 0x79f450c9caa4 <unknown>
+#19 0x79f450d29c3c <unknown>
+
+[2025-09-07 21:18:47] [ERROR] bot: Número de erros: 2 | Número máximo de erros: 3
+[2025-09-07 21:18:49] [ERROR] bot: Erro ao executar loop  externo: Message: session not created: cannot connect to chrome at 127.0.0.1:46109
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.138; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x5c8f55d1794a <unknown>
+#1 0x5c8f5578c8a0 <unknown>
+#2 0x5c8f557cd587 <unknown>
+#3 0x5c8f557cc492 <unknown>
+#4 0x5c8f557c1b49 <unknown>
+#5 0x5c8f55812386 <unknown>
+#6 0x5c8f55811a56 <unknown>
+#7 0x5c8f55803e03 <unknown>
+#8 0x5c8f557d0968 <unknown>
+#9 0x5c8f557d15e1 <unknown>
+#10 0x5c8f55cdb548 <unknown>
+#11 0x5c8f55cdf272 <unknown>
+#12 0x5c8f55cc2313 <unknown>
+#13 0x5c8f55cdfdc5 <unknown>
+#14 0x5c8f55ca749f <unknown>
+#15 0x5c8f55d04158 <unknown>
+#16 0x5c8f55d04332 <unknown>
+#17 0x5c8f55d16a53 <unknown>
+#18 0x75f839e9caa4 <unknown>
+#19 0x75f839f29c3c <unknown>
+
+[2025-09-07 21:18:49] [ERROR] bot: Número de erros: 3 | Número máximo de erros: 3
+[2025-09-07 21:18:49] [INFO] bot: Parando execução...
+[2025-09-07 21:20:00] [ERROR] bot: Erro ao executar loop  externo: Message: session not created: cannot connect to chrome at 127.0.0.1:36623
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.138; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x57e458b4294a <unknown>
+#1 0x57e4585b78a0 <unknown>
+#2 0x57e4585f8587 <unknown>
+#3 0x57e4585f7492 <unknown>
+#4 0x57e4585ecb49 <unknown>
+#5 0x57e45863d386 <unknown>
+#6 0x57e45863ca56 <unknown>
+#7 0x57e45862ee03 <unknown>
+#8 0x57e4585fb968 <unknown>
+#9 0x57e4585fc5e1 <unknown>
+#10 0x57e458b06548 <unknown>
+#11 0x57e458b0a272 <unknown>
+#12 0x57e458aed313 <unknown>
+#13 0x57e458b0adc5 <unknown>
+#14 0x57e458ad249f <unknown>
+#15 0x57e458b2f158 <unknown>
+#16 0x57e458b2f332 <unknown>
+#17 0x57e458b41a53 <unknown>
+#18 0x77431d29caa4 <unknown>
+#19 0x77431d329c3c <unknown>
+
+[2025-09-07 21:20:00] [ERROR] bot: Número de erros: 1 | Número máximo de erros: 3
+[2025-09-07 21:20:02] [ERROR] bot: Erro ao executar loop  externo: Message: session not created: cannot connect to chrome at 127.0.0.1:44681
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.138; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x5cbef33c894a <unknown>
+#1 0x5cbef2e3d8a0 <unknown>
+#2 0x5cbef2e7e587 <unknown>
+#3 0x5cbef2e7d492 <unknown>
+#4 0x5cbef2e72b49 <unknown>
+#5 0x5cbef2ec3386 <unknown>
+#6 0x5cbef2ec2a56 <unknown>
+#7 0x5cbef2eb4e03 <unknown>
+#8 0x5cbef2e81968 <unknown>
+#9 0x5cbef2e825e1 <unknown>
+#10 0x5cbef338c548 <unknown>
+#11 0x5cbef3390272 <unknown>
+#12 0x5cbef3373313 <unknown>
+#13 0x5cbef3390dc5 <unknown>
+#14 0x5cbef335849f <unknown>
+#15 0x5cbef33b5158 <unknown>
+#16 0x5cbef33b5332 <unknown>
+#17 0x5cbef33c7a53 <unknown>
+#18 0x76b1cd29caa4 <unknown>
+#19 0x76b1cd329c3c <unknown>
+
+[2025-09-07 21:20:02] [ERROR] bot: Número de erros: 2 | Número máximo de erros: 3
+[2025-09-07 21:20:03] [ERROR] bot: Erro ao executar loop  externo: Message: session not created: cannot connect to chrome at 127.0.0.1:47351
+from session not created: This version of ChromeDriver only supports Chrome version 140
+Current browser version is 139.0.7258.138; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x5f7aaf75b94a <unknown>
+#1 0x5f7aaf1d08a0 <unknown>
+#2 0x5f7aaf211587 <unknown>
+#3 0x5f7aaf210492 <unknown>
+#4 0x5f7aaf205b49 <unknown>
+#5 0x5f7aaf256386 <unknown>
+#6 0x5f7aaf255a56 <unknown>
+#7 0x5f7aaf247e03 <unknown>
+#8 0x5f7aaf214968 <unknown>
+#9 0x5f7aaf2155e1 <unknown>
+#10 0x5f7aaf71f548 <unknown>
+#11 0x5f7aaf723272 <unknown>
+#12 0x5f7aaf706313 <unknown>
+#13 0x5f7aaf723dc5 <unknown>
+#14 0x5f7aaf6eb49f <unknown>
+#15 0x5f7aaf748158 <unknown>
+#16 0x5f7aaf748332 <unknown>
+#17 0x5f7aaf75aa53 <unknown>
+#18 0x714bc889caa4 <unknown>
+#19 0x714bc8929c3c <unknown>
+
+[2025-09-07 21:20:03] [ERROR] bot: Número de erros: 3 | Número máximo de erros: 3
+[2025-09-07 21:20:04] [INFO] bot: Parando execução...

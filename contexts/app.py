@@ -22,3 +22,7 @@ class App:
         options.binary_location = "/usr/bin/google-chrome"
         self.driver = uc.Chrome(use_subprocess=True, user_data_dir=None, options=options)
         self.driver.set_page_load_timeout(60)
+    def need_login(self):
+        return 'ReturnUrl' in self.driver.current_url
+    def is_error(self):
+        return 'Error' in self.driver.current_url

@@ -27,3 +27,5 @@ class AuthContext:
         password_box.send_keys(self.password)
         email_box.send_keys(Keys.ENTER)
         time.sleep(5)
+    
+            
